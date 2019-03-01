@@ -21,6 +21,10 @@ function process(term, input) {
   else if (input.includes('clear')) {
     term.reset()
   }
+  else if (input.includes('exit')) {
+    console.log('exitings')
+    window.close()
+  }
 }
 
 function repl(term) { 
@@ -56,6 +60,7 @@ function printHelp(term) {
   term.writeln('Commands:\n');
   term.writeln('  help: will display this help prompt')
   term.writeln('  clear: will clear the entire terminal screen');
+  term.writeln('  exit: will close this tab')
 }
 
 
