@@ -24,6 +24,7 @@
   "dependencies": {
     "figlet": "^1.2.1",
     "keycode-js": "^1.0.4",
+    "surge": "^0.20.1",
     "xterm": "^3.11.0"
   }
 }
