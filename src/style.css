@@ -1,3 +1,8 @@
 body {
-  background-color: #000000
+  background-color: #000000;
+  color: #41FF00
 }
+
+pre {
+  font-family: "Courier New", Courier, monospace;
+  }

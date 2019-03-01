@@ -24,7 +24,11 @@ module.exports = {
         use: [
           'file-loader'
         ]
-      }
+      },
+      {
+        test: /\.txt$/,
+        use: 'raw-loader',
+      },
     ]
   }
 };
