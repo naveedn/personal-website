@@ -54,7 +54,7 @@ function printHelp(term) {
   term.writeln('');
   term.writeln('If you get need help, simply type in "help" or "?" into the prompt \n');
   term.writeln('Commands:\n');
-  term.writeln('  reset: will clear the entire terminal screen');
+  term.writeln('  clear: will clear the entire terminal screen');
 }
 
 
