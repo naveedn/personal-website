@@ -27,7 +27,7 @@ function process(term, input) {
   }
 }
 
-function repl(term) { 
+function repl(term) {
   let buffer = ""
 
   term.on('key', function(key, ev) {
@@ -38,10 +38,11 @@ function repl(term) {
       buffer = ""
       term.prompt();
     } else if (ev.keyCode === KeyCode.KEY_BACK_SPACE) {
+      console.log('a');
+      console.log(term.x)
         // Do not delete the prompt
-        if (term.x > 2) {
+      if (term.x > 2) {
           term.write('\b \b');
-          buffer = buffer.slice(0,-1)
         }
     } else if (printable) {
         buffer += key
